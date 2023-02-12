@@ -5,4 +5,9 @@ const router = express.Router();
 
 router.get('/', homeController.home);
 
+//for routes other than the home controller 
+// use router.use('routerName', require(routerFileName))
+
+router.use('/users', require('./users'));
+
 module.exports = router;
