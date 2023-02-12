@@ -9,5 +9,6 @@ router.get('/', homeController.home);
 // use router.use('routerName', require(routerFileName))
 
 router.use('/users', require('./users'));
+router.use('/posts', require('./posts'));
 
 module.exports = router;
